@@ -1,16 +1,39 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 import { AppComponent } from './app.component';
-
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import {MatButtonModule,
+        MatChipsModule,
+        MatInputModule,
+        MatCheckboxModule,
+        MatToolbarModule,
+        MatSidenavModule,
+        MatButtonToggleModule,
+        MatIconModule} from '@angular/material';
+import { TextInputComponent } from './text-input/text-input.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CheckboxComponent,
+    TextInputComponent,
+    HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatInputModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatButtonToggleModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

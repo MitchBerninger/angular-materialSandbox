@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('reset.css');
+html, body, .mat-chip{font-family: 'Roboto', sans-serif;
+}
+.mat-chip, .workArea{margin: 30px auto;}
+.mat-chip-list-wrapper{background-color: #f0f0f0;}
+
+.x2{font-size:2em;
+    height: 40px !important;
+    width: 40px !important;
+    margin-top: 30px;
+    border-radius: 50%;}
+.x3{font-size: 3em;
+    height: 60px !important;
+    width: 60px !important;
+    margin-top: 15px;
+    border-radius: 50%;}
+.mat-sidenav {
+    width: calc(100% - 56px);
+    max-width: 400px;
+    }
+.mat-sidenav .mat-toolbar{background: url('./assets/img/blue.jpg') no-repeat bottom center;
+                          background-size: cover;
+                          color: white;}
+.mat-sidenav p{font-size: 1em;
+               line-height: 1em;}
+.mat-sidenav .name{font-size: .75em;}
+.mat-sidenav .email{font-size: .6em;}
+.mat-toolbar button{margin-right:10px;}
