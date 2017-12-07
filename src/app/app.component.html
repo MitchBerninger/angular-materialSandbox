@@ -1,17 +1,17 @@
-<div ng-controller="AppCtrl" layout="column" style="height: 500px;" ng-cloak>
+<div ng-controller="AppCtrl" np-app="materialSandbox" layout="column" style="height: 500px;">
   <section layout="row" flex>
     <mat-sidenav-container>
       <mat-sidenav #sidenav mode="over" opened="false" class="sidenav">
         <!-- sidenav content -->
-        <mat-toolbar>
+        <mat-toolbar ng-controller="UserCtrl">
           <mat-toolbar-row class="iconWrapper">
-                <img class="x3" src="{{userImg}}">
+                <img class="x3" src="{{currentUser.userImg}}">
           </mat-toolbar-row>
           
           <mat-toolbar-row class="accountInfo">
-            <p><span class="name">{{name}}</span>
+            <p><span class="name">{{currentUser.name}}</span>
               <br>
-              <span class="email">{{email}}</span>
+              <span class="email">{{currentUser.email}}</span>
             </p>
           </mat-toolbar-row>
           

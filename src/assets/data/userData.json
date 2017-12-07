@@ -1,0 +1,17 @@
+{
+    "users": [
+        {
+            "userID": 1, 
+            "name": "Mitch Berninger",
+            "email": "mitchell.berninger@gmail.com",
+            "userImg": "./assets/img/Summer15Square.jpg"
+            
+        },
+        {
+            "userID": 2, 
+            "name": "John Doe",
+            "email": "abc@xyz.com",
+            "userImg": "./assets/img/ic_account_circle_black_24dp_2x.png"
+        }     
+    ]
+}
